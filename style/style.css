@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --prussian-blue: #153253;
+    --indigo-dye: #284B63;
+    --ashy-gray: #B4B8AB;
+    --ivory: #F4F9E9;
+
+    --noto: "Noto Sans Mono";
+    --sans: "Open Sans";
+}
+
+body, html {
+    font-family: var(--noto), Arial, sans-serif;
+    background-color: var(--ivory);
+    scroll-behavior: smooth;
+}
+
+.container {
+    min-width: 500px;
+    padding: 10px 35px;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 95px;
+    background-color: var(--prussian-blue);
+}
+
+header > div.container {
+    height: 95px;
+}
+
+header > div.flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: var(--ivory);
+    text-decoration: none;
+}
+
+ul.flex {
+    justify-content: center;
+    gap: 50px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a:hover { 
+    color: var(--ashy-gray);
+}
+
+.contact {
+    background-color: var(--ivory);
+    border-radius: 99px;
+    padding: 10px;
+}
+
+.contact a {
+    color: #153253;
+}
+
+.contact:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+}
