@@ -82,3 +82,38 @@ nav ul li a:hover {
     transition: all .2s ease-in-out;
     transform: scale(1.05);
 }
+
+main {
+    padding-top: 95px;
+}
+
+#start {
+    height: 600px;
+    background-color: var(--ivory);
+}
+
+#start > div.container {
+    height: 600px;
+}
+
+#start > div.flex {
+    justify-content: space-around;
+    align-items: center;
+}
+
+#start h1 {
+    font: 100 4em var(--sans);
+    letter-spacing: 3px;
+}
+
+#start h2 {
+    font: bolder 2em var(--noto);
+    color: var(--prussian-blue)
+}
+
+#start img {
+    width: 375px;
+    height: 375px;
+    border-radius: 99%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
